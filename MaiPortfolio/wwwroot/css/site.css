@@ -1,31 +1,110 @@
+/* Global Styles */
 html {
-  font-size: 14px;
+    font-size: 14px;
+    background-color: #0d1b2a;
+    color: #00ccff; /* Futuristic Cyan */
+    font-family: 'Poppins', sans-serif;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Background Effect (Subtle AI Glow) */
 body {
-  margin-bottom: 60px;
+    background: radial-gradient(circle, #102a44 30%, #08111f 100%);
+    color: #00ccff;
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7);
+    margin-bottom: 60px;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+/* Buttons - Cool AI Glow */
+.btn {
+    background-color: transparent;
+    border: 2px solid #00ccff;
+    color: #00ccff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ccff;
+    font-family: 'Courier New', monospace;
+    transition: 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+    .btn:hover {
+        background-color: #00ccff;
+        color: #08111f;
+        box-shadow: 0 0 15px rgba(0, 204, 255, 0.7);
+        text-shadow: none;
+    }
+
+/* Forms */
+.form-control, .form-floating > .form-control {
+    background-color: #08111f;
+    border: 2px solid #00ccff;
+    color: #00ccff;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+
+    .form-control:focus, .form-floating > .form-control:focus {
+        box-shadow: 0 0 15px rgba(0, 204, 255, 0.7);
+        border-color: #00ccff;
+    }
+
+/* Links */
+a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #33e0ff;
+        text-shadow: 0 0 8px #33e0ff;
+    }
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(8, 17, 31, 0.9) !important;
+    border-bottom: 2px solid #00ccff;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand, .nav-link {
+    color: #00ccff !important;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+    .nav-link:hover {
+        color: #33e0ff !important;
+        text-shadow: 0 0 10px #33e0ff;
+    }
+
+/* Futuristic Headings */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 15px rgba(0, 204, 255, 0.8);
+    letter-spacing: 2px;
+}
+
+/* Table Styling */
+.table {
+    border: 2px solid #00ccff;
+    color: #00ccff;
+}
+
+    .table th, .table td {
+        border: 1px solid #00ccff;
+        text-shadow: 0 0 5px rgba(0, 204, 255, 0.7);
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #00ccff;
+    border-top: 2px solid #00ccff;
+    text-shadow:
